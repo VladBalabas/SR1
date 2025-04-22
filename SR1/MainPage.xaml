@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SR1.MainPage">
+
+    <ScrollView>
+        <StackLayout Padding="30" Spacing="20">
+
+            <Label Text="Завдання 1: Введіть межі [a, b]" FontSize="Large" HorizontalOptions="Center" />
+
+            <Entry x:Name="EntryA" Placeholder="Введіть a" Keyboard="Numeric"/>
+            <Entry x:Name="EntryB" Placeholder="Введіть b" Keyboard="Numeric"/>
+
+            <Button Text="Обчислити суму (11 % 8 == 5)" Clicked="OnCalculateClicked" BackgroundColor="Aquamarine"/>
+            <Label x:Name="ResultLabel" FontSize="Medium" TextColor="DarkBlue"/>
+
+            <Label Text="Завдання 2: Введіть три числа" FontSize="Large" HorizontalOptions="Center" />
+
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <Entry x:Name="EntryX1" Placeholder="Число 1" WidthRequest="80" Keyboard="Numeric"/>
+                <Entry x:Name="EntryX2" Placeholder="Число 2" WidthRequest="80" Keyboard="Numeric"/>
+                <Entry x:Name="EntryX3" Placeholder="Число 3" WidthRequest="80" Keyboard="Numeric"/>
+            </StackLayout>
+
+            <Button Text="Сума кубів кратних 7" Clicked="OnCubesSumClicked" BackgroundColor="Aquamarine"/>
+            <Label x:Name="CubeSumLabel" FontSize="Medium" TextColor="DarkGreen"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
